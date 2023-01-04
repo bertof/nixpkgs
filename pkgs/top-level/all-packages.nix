@@ -11388,6 +11388,8 @@ with pkgs;
 
   rust-code-analysis = callPackage ../development/tools/rust-code-analysis { };
 
+  rust-i18n = callPackage ../development/tools/rust/rust-i18n {};
+
   rust-motd = callPackage ../tools/misc/rust-motd {
     inherit (darwin.apple_sdk.frameworks) Security;
   };
